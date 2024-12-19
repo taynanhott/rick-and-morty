@@ -96,7 +96,7 @@ export default function App() {
       window.innerHeight + document.documentElement.scrollTop >=
       document.documentElement.offsetHeight - 100
     ) {
-      if (!loading && info.count !== characters.length) {
+      if (!loading && count !== characters.length) {
         fetchCharacters(page, search);
       }
     }
@@ -120,7 +120,7 @@ export default function App() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {characters.map((character, index) => (
           <motion.div
-            className="backdrop-blur-sm rounded-xl shadow-black/50 shadow-xl hover:shadow-emerald-400"
+            className="backdrop-blur-sm rounded-xl shadow-black/50 shadow-xl hover:shadow-emerald-400 hover:shadow-3xl group"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             exit={{ opacity: 1, y: 0 }}
