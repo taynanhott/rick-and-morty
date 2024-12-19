@@ -5,7 +5,7 @@ function RadioGroup({ setFilter, className = "" }) {
 
     return (
         <div className={className}>
-            <div className="flex gap-3">
+            <div className="flex gap-3 text-sm">
                 <div >
                     <input
                         type="radio"
@@ -49,6 +49,21 @@ function RadioGroup({ setFilter, className = "" }) {
                         }}
                     />
                     <label className="ml-[2px]" htmlFor="dead">Dead</label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="unknown"
+                        name="filter"
+                        value="unknown"
+                        checked={selectedValue === "unknown"}
+                        onChange={(e) => {
+                            setSelectedValue(e.target.value);
+                            setFilter(e.target.value);
+                        }}
+                    />
+                    <label className="ml-[2px]" htmlFor="unknown">Unknown</label>
                 </div>
             </div>
         </div>

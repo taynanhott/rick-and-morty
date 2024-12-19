@@ -96,3 +96,11 @@
 .material-symbols-outlined {
   vertical-align: middle;
 }
+
+input[type="radio"]:checked {
+  accent-color: #34d399;
+}
+
+input[type="radio"]:checked + label {
+  color: #34d399;
+}

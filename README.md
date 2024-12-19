@@ -7,7 +7,7 @@ Esta é uma aplicação web construída com Vite, React, JavaScript e Tailwind C
 
 - **Pesquisar personagens** por:
   - Nome
-  - Status (Vivo, Morto)
+  - Status (Vivo, Morto ou Desconhecido)
 - **Navegar pela lista de personagens** com resultados paginados.
 - **Visualizar informações detalhadas** sobre cada personagem, incluindo:
   - Imagem do personagem

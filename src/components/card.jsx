@@ -1,6 +1,6 @@
 export default function Card({ character }) {
     return (
-        <div key={character.id} className="bg-gray-800 rounded-lg shadow-lg p-4 card h-72">
+        <div key={character.id} className="bg-gray-800 rounded-lg p-4 card h-72 ">
             <img
                 src={character.image}
                 alt={character.name}

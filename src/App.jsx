@@ -95,7 +95,7 @@ export default function App() {
   }, [page, search]);
 
   return (
-    <div className="min-h-screen w-full bg-gray-900 text-white relative px-16 pt-6 pb-16">
+    <div className="min-h-screen w-full text-white relative px-14 pt-6 pb-14 bg-gradient-to-r from-gray-900 via-emerald-900 to-gray-900 animated-gradient">
       <img
         src="image/logo.png"
         alt="portal"
@@ -109,7 +109,7 @@ export default function App() {
         <input
           type="text"
           placeholder="Search for a character..."
-          className="px-4 py-2 rounded-l-lg focus:outline-none w-40 md:w-56 lg:w-64"
+          className="px-4 py-2 rounded-l-lg focus:outline-none text-emerald-400 w-40 md:w-56 lg:w-64"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
@@ -129,7 +129,7 @@ export default function App() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {characters.map((character, index) => (
           <motion.div
-            className="backdrop-blur-sm rounded-xl shadow-lg"
+            className="backdrop-blur-sm rounded-xl shadow-black/50 shadow-xl hover:shadow-emerald-400"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             exit={{ opacity: 1, y: 0 }}
